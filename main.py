@@ -17,7 +17,7 @@ credentials = flow.run_console()
 youtube = googleapiclient.discovery.build(api_service_name, api_version, credentials=credentials)
 
 
-# uses the youtube api to search for the first 25 videos of the given keyword
+# uses the youtube api to search for the first specified number of videos for the given keyword
 # returns the ids of these videos
 def simple_search(keywords, num_results):
     request = youtube.search().list(
