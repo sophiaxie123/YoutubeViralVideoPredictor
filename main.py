@@ -1,3 +1,6 @@
+#pip install --upgrade google-api-python-client
+#pip install --upgrade google-auth-oauthlib google-auth-httplib2
+
 import os
 import google_auth_oauthlib.flow
 import googleapiclient.discovery
